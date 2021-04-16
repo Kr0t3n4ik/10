@@ -1,6 +1,4 @@
 import datetime
 
-dt = input()
-day, month, year = (int(x) for x in dt.split('.'))
-ans = datetime.date(year, month, day)
-print(ans.strftime("%A"))
+
+print(datetime.date(**{item:int(value) for item, value in zip(('day', 'month', 'year'), input().split('.'))}).strftime("%A"))
