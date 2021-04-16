@@ -2,3 +2,4 @@ import datetime
 
 
 print(datetime.date(**{item:int(value) for item, value in zip(('day', 'month', 'year'), input().split('.'))}).strftime("%A"))
+
