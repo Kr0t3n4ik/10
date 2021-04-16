@@ -1,5 +1,5 @@
-def is_palindrome(s):
-    if s[::1] == s[::-1]:
+def is_palindrome(word):
+    if word[::1] == word[::-1]:
         return True
     else:
         return False
@@ -9,4 +9,3 @@ if is_palindrome(input().upper()):
     print("YES")
 else:
     print("NO")
-
